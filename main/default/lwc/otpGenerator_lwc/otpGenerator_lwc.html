@@ -1,3 +1,17 @@
 <template>
+    <lightning-card title="OTP Generator" icon-name="Custom:Cusotm57">
+        
+        <div class = "slds-m-around_small">
+            <lightning-button variant="brand" label="Generate OTP" onclick={handleClick} disabled={disabledButton}> </lightning-button>
+        </div>
 
+        <div class = "slds-var-p-around_small">
+            <p> {generatedOTP} </p>
+        </div>
+
+        <div class = "slds-var-p-around_small">
+            <p class="slds-text-color_error"> {timerText} </p>
+        </div>
+
+    </lightning-card>
 </template>
